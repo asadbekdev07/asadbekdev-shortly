@@ -1,3 +1,45 @@
+/* CUSTOM-PROPS */
+  :root {
+    --text-color: #929aa8;
+    --heading-color: #34313d;
+    --accent-color: #2bd0d0;
+    --accent-color-hover: #9ae3e3;
+    --light-bg: #eff1f7;
+    --dark-bg: #232127;
+    --error-color: #f46363;
+  }
+
+
+/* FONT-FACE  */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/2") format("woff2"),
+  url("../fonts/") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+  url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Italic.woff2") format("woff2"),
+  url("../fonts/Poppins-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 /* GLOBAL  */
 html {
   box-sizing: border-box;
@@ -17,10 +59,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
   background-color: #ffffff;
-  color: #222222;
+  color: var(--text-color);
 }
 
 img {
@@ -32,9 +76,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
