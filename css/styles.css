@@ -1,13 +1,13 @@
 /* CUSTOM-PROPS */
-  :root {
-    --text-color: #929aa8;
-    --heading-color: #34313d;
-    --accent-color: #2bd0d0;
-    --accent-color-hover: #9ae3e3;
-    --light-bg: #eff1f7;
-    --dark-bg: #232127;
-    --error-color: #f46363;
-  }
+:root {
+  --text-color: #929aa8;
+  --heading-color: #34313d;
+  --accent-color: #2bd0d0;
+  --accent-color-hover: #9ae3e3;
+  --light-bg: #eff1f7;
+  --dark-bg: #232127;
+  --error-color: #f46363;
+}
 
 
 /* FONT-FACE  */
