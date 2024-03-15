@@ -77,6 +77,30 @@ a {
   text-decoration: none;
 }
 
+/* AUTOFILL  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: transparent;
+  -webkit-text-fill-color: inherit;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+/* PLACEHOLDER-STYLES  */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: rgba(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -329,10 +353,15 @@ a {
 
 /* URL-SHORTENER-RESULTS */
 .url-shortener__results {
+  display: none;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.15px;
   line-height: 36px;
+}
+
+.url-shortener__results--open {
+  display: block;
 }
 
 .url-shortener__result {
